@@ -9,7 +9,7 @@ const path = require('path');
 const bodyParser = require("body-parser");
 
 // ENV Vars
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 9999;
 
 app.use(bodyParser.urlencoded({
     extended: true
