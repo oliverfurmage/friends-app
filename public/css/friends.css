@@ -1,0 +1,223 @@
+body{
+    background-color: #01afdf;
+    color:#fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+
+.fr-setup{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding: 5vw;
+
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.fr-setup-players{
+    flex: 0 0  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 90px;
+}
+.fr-setup-players ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.fr-setup-players-item{
+    position: relative;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    margin: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.fr-setup-players-item:after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    right:0;
+    width:200%;
+    height:200%;
+    z-index: 10;
+    transform: rotate(-45deg);
+    background: rgba(255,255,255,0.3);
+}
+.fr-setup-players-item:before{
+    content: "Delete";
+    position: absolute;
+    top:100%;
+    right:0;
+    width:100%;
+    height:100%;
+    z-index: 20;
+    background: #ff3f00;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.fr-setup-players-item:hover:before{
+    top:0;
+}
+
+.fr-setup-add{
+    flex: 0 0  auto;
+    display:flex;
+    justify-content: center;
+}
+.fr-setup-add-input{
+    border: 0;
+    background: transparent;
+    outline : none !important;
+
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;;
+}
+
+.fr-setup-add-submit{
+    margin: 20px 0;
+}
+
+
+.fr-setup-start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fr-setup-icon{
+    position: relative;
+    height: 75px;
+    width: 75px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fr-setup-icon > div{
+    overflow:hidden;
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.fr-setup-icon > div:after{
+    content:"";
+    z-index: 10;
+
+    position: absolute;
+    bottom:110%;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background-color: #46c36c;
+
+    transition: all 0.3s;
+}
+.fr-setup-icon:hover > div:after{
+    bottom:0;
+}
+.fr-setup-icon span{
+    display: block;
+    position: relative;
+
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    opacity: 0;
+
+    transform: translate(0, -200%);
+    transition: all 0.3s;
+}
+.fr-setup-icon:hover span{
+    opacity: 1;
+    transform: translate(0, -150%);
+}
+.fr-setup-icon em{
+    position: relative;
+    z-index: 20;
+    font-weight: 700;
+    font-size:40px;
+}
+
+
+/* GAME */
+
+.fr-game{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding: 5vw;
+
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.fr-game-header{
+    position: fixed;
+    top:0;
+    left:0;
+    height:50px;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    z-index: 1000;
+}
+.fr-game-restart{
+    line-height: 50px;
+    padding: 0 15px;
+    color:rgba(255, 255, 255, 0.5);
+    text-decoration: none !important;
+
+    transition: all 0.3s;
+}
+.fr-game-restart:hover{
+    color:rgba(255, 255, 255, 1);
+}
+
+.fr-game-question{
+    text-align:center;
+}
+.fr-game-question span{
+    font-size: 30px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game - Friends Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="/css/friends.css" type="text/css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fonts/fa/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
+
+    <script src="/js/game.js" defer></script>
+
+    <!-- <link rel='icon' href='favicon.jpg' type='image/x-icon'> -->
+</head>
+
+<body>
+
+    <header class="fr-game-header">
+        <div class="row">
+            <div class="col">
+                <div class="fr-game-players">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="col-auto">
+                <a id="Game_Restart" class="fr-game-restart" href="#">
+                    Restart
+                    &nbsp;
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <main id="Game_Container" class="fr-game" style="opacity: 0;">
+
+        <div class="fr-game-question">
+            <span id="Game_QuestionContainer"></span>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Setup - Friends Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="/css/friends.css" type="text/css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fonts/fa/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" defer></script>
+
+    <script src="/js/setup.js" defer></script>
+
+    <!-- <link rel='icon' href='favicon.jpg' type='image/x-icon'> -->
+</head>
+
+<body>
+    
+    <main class="fr-setup">
+
+        <div class="fr-setup-add">
+            <form id="Setup_AddPlayer" autocomplete="off">
+                <input class="fr-setup-add-input" id="Setup_AddPlayer_PlayerName" placeholder="Enter player name" autocomplete="off"/>
+                <div class="text-center d-none">
+                    <input class="fr-setup-add-submit" type="submit" title="Add player" autocomplete="off">
+                </div>
+            </form>
+        </div>
+
+        <div class="fr-setup-players">
+            <ul>
+
+            </ul>
+        </div>
+
+        <div class="fr-setup-start">
+            <div>
+                <a href="/game" class="fr-setup-icon">
+                    <span>Start!</span>
+                    <div>
+                        <em class="far fa-angle-right"></em>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
